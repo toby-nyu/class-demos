@@ -25,6 +25,8 @@ p {
 
 #code a {
     text-decoration: none;
+    list-style: none;
+    padding-left: 0;
 }
 
 footer {
