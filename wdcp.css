@@ -20,13 +20,22 @@ p {
 }
 
 #code ul{
-    margin: 3% 0 0 0;
+    margin: 3% 0 6% 0;
+    padding:0;
+}
+
+#code li{
+    list-style-type: none;
 }
 
 #code a {
     text-decoration: none;
     list-style: none;
     padding-left: 0;
+}
+
+#code a:hover {
+    text-decoration: underline;
 }
 
 footer {
