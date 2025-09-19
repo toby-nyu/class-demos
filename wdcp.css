@@ -1,7 +1,12 @@
+html {
+    background-color: #eaeaea; 
+}
+
 body{
     width:80%;
     margin: 20px auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 h2 {
     text-decoration: underline;
@@ -12,4 +17,18 @@ h2 {
 p {
     line-height: 130%;
     color: #585858
+}
+
+#code ul{
+    margin: 3% 0 0 0;
+}
+
+#code a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 3%;
+    background-color: #eaeaea; 
 }
