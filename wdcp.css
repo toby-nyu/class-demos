@@ -1,0 +1,15 @@
+body{
+    width:80%;
+    margin: 20px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #71bdff;
+    text-decoration-thickness: 50%;
+    margin-top: 10%;
+}
+p {
+    line-height: 130%;
+    color: #585858
+}
