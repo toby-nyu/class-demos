@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Bagnard'; /* Name for the font */
+  src: url('BagnardSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+    background-color: darkslategrey;
+    color:white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+    width:80%;
+    margin: 0 auto;
+    height: 100vh;  /* set height to full viewport height */
+    overflow: auto; /* added to enable scrolling */
+}
+#jumper {
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom:2%;
+    right:1%
+}
+
+.fa-circle-up {
+    color:white;
+    font-size: 	2.5em;
+}
+
+h1 {
+    font-family: "Times New Roman", serif; 
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    padding-top:8%;
+	margin-top:0;
+    margin-bottom: 4%;
+    
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    text-decoration-thickness: 7px;
+    text-decoration-color: cadetblue;
+    
+}
+
+h3 {
+    padding-top: 13%;
+    font-family: "Bagnard", serif ; 
+}
+
+/*  only anchors in a paragraph element will get these styles */
+p a {
+    color: #c0bebe;
+    text-decoration-style: solid;
+    font-style: italic;
+}
+
+/* FLEXBOX for main nav */
+#main-nav {
+    display: flex;
+    direction: ltr; /* default */
+    flex-direction: row; /* default */
+    background-color: #1b6464;
+    margin: 5% 0 0 0;
+    border-block: 1rem solid #295729;
+    writing-mode: horizontal-tb;
+    justify-content: space-around; /* spaces the flexbox items */
+    position: sticky;
+    top:0%;
+}
+/* FLEXBOX items */
+#main-nav div {
+    display: inline-block;
+ 
+    padding:2% 0;
+
+}
+
+
+/*  only anchors in a nav element will get these styles */
+nav a{
+    background-color: black;
+    padding: 11px;
+    border-radius: 50% 20% / 10% 40%;
+    
+}
+
+nav a:link {
+    color:aliceblue;
+    text-decoration: none;
+}
+nav a:visited {
+    color:#fad0d0;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: #430c0c;
+}
+
+nav a:active {
+    color:aqua;
+}
+
+section i {
+    font-size:2.5em;
+    color:#06c9c94d;
+}
+
+#london-skyline{
+    float:right;
+    margin:20px;
+    border: 0.2em solid #b2eabb;
+    width: 50%;
+}
+
+#second, #third {
+    width:47%;
+    float:left;
+    margin-right: 3%;
+}
+
+.clear {
+    clear: both;
+}
+.info {
+    font-family: "Lucida Console", "Courier New", monospace;
+    letter-spacing: normal;
+    font-size: small;
+    color:#fdffce
+}
+.names {
+    color:#e3fffc;
+    font-weight: bold;
+}
+
+footer {
+        border-block-start: 1rem solid #b1b9b1;
+
+}
