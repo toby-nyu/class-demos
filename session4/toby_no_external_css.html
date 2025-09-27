@@ -61,30 +61,29 @@
 			
 		<section id="css-info">
 			<h3>CSS (Cascading Style Sheets) <span class="info">(this is an h3 heading)</span></h3>
-			<p>	As you can can see, this page has been styled using CSS. There is a single style rule in the HTML page &lt;head&gt;
+			<p>As you can can see, this page has been styled using CSS. There is a single style rule in the HTML page &lt;head&gt;
 			element, increasing the <span class="info">letter-spacing</span> for the <span class="info">h2</span> heading, 
-			as well in inline styles in the main navigation icon elements - <span class="info">&lt;i&gt;</span> - (making the graduation hats different colours).<p>
-			<p><img src="london_skyline.jpeg" alt="London skyline" id="london-skyline" width="20%">
-			In addition to these, there are a variety of styles rules defined in the <a href="style.css">external style sheet</a>. 
-			Selectors are used to target the HTML. This targetting ranges from simple HTML elements like the 
-			<span class="info">body</span>, <span class="info">h1</span>, <span class="info">h2</span> &amp; <span class="info">h3</span> 
+			as well as inline styles in the main navigation icon elements - <span class="info">&lt;i&gt;</span> - (making the graduation hats different colours).<p>
+			<p><img src="london_skyline.jpeg" alt="London skyline" id="london-skyline" width="20%">In addition to these, there are a variety of styles rules defined in the <a href="style.css">external style sheet</a>. 
+			Selectors are used to target the HTML. This targeting ranges from simple HTML elements like the 
+			<span class="info">body</span>, <span class="info">h1</span>, <span class="info">h2</span> &amp; <span class="info">h3</span>, 
 			through targeting classes and id attributes of specific elements such as - 
 			<span class="info">&lt;span class="info"&gt; which this span of text has wrapped around it&lt;/span&gt;</span> -,
-			to the more complex mixing of elements and id/class and also the use of psuedo 
-			classes for the anchor elements content being additionally styled when a user hovers over, activates, 
-			or has visited a link.</p>
-			<p>Remember, id values must be unique on an HTML page, so when targetting an element using its id, 
+			to the more complex mixing of elements and id/class, and also the use of psuedo 
+			classes for the anchor element's content which was been additionally styled so when a user hovers over, activates, 
+			or has visited a link the colours and underline change.</p>
+			<p>Remember, id values must be unique on an HTML page, so when targeting an element using its id, 
 			there is really no need to include the element itself, unless you are intentionally adding specificity. </p>
 			<p>Remember too that there is a specific order in which you set rules for anchor pseudo selectors. 
-			and also that it is not recommended to change the font (size, family, weight, etc) for these, 
+			Also note that it is not recommended to change the font (size, family, weight, etc) for different anchor states, 
 			as this can cause the page to jump.</p>
 			<p>You can find everything you need to know about CSS from the 
-			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">Mozilla Developers Network</a>, and sites like 
-			<a href="https://css-tricks.com/">CSS tricks</a> can be very helpful, as they often show interative examples 
-			and well have documented explanations.
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">Mozilla Developers Network</a>. Sites like 
+			<a href="https://css-tricks.com/">CSS tricks</a> can also be very helpful, as they often show interactive examples 
+			and have well documented explanations.
 			</p>
 			<p>By the way, if you like the picture, here's the info on it's author: 
-			Its by Ilya Grigorik - Imported from 500px (archived version) by the Archive Team. CC BY-SA 3.0.  You can 
+			It's a photograph by Ilya Grigorik - Imported from 500px (archived version) by the Archive Team. CC BY-SA 3.0.  You can 
 			<a href="https://commons.wikimedia.org/w/index.php?curid=74181523">view the Wikimedia Commons details page</a>
 			for more details.</p>
 		</section>
@@ -92,14 +91,15 @@
 			<h3>Flexbox &amp; Floats </h3>
 			<p>The main menu uses Flexbox CSS - this can be viewed in the <a href="style.css">external style sheet</a>. 
 			The <span class="info">&lt;nav&gt;</span> element with the id <span class="info">"main-nav"</span> is the container,
-			which has the  <span class="info">display:flexbox;</span> rule. The children, or flexbox items are the 
+			which has the  <span class="info">display:flexbox;</span> rule. The children, or flexbox items, are the 
 			<span class="info">&lt;div&gt;</span> elements. The <span class="info">&lt;div&gt;</span> element has no semantic meaning,
 			and therefore  does not inherently represent anything. Instead, it's used to group content so it can be easily 
 			styled using the class or id attributes, so perfect for this use case.</p>
-			<p>The Image element <span class="info">&lt;img&gt;</span> for the photo above above has an id attribute - 
-			<span class="info">id="london-skyline"</span>. In the external CSS file the selector 
+			<p>The Image element <span class="info">&lt;img&gt;</span> for the photo above has an id attribute - 
+			<span class="info">id="london-skyline"</span>. In the external CSS file, the selector 
 			<span class="info">#london-skyline</span> is declared. One of the rules <span class="info">float:right;</span> 
-			makes the element float to the right, with text wrapping around it. This is the correct usage of the CSS float property. Using float for layout was a workaround
+			makes the element float to the right, with text wrapping around it. This is the correct usage of the CSS float property. 
+			Using float for layout was a workaround
 			that was used prolifically until CSS3 properties flexbox and CSS grid were developed.</p>
 			
 		</section>
@@ -121,7 +121,7 @@
 			<a href="https://github.com/dconstruct/Bagnard/">You can find more about the font by clicking this text</a>. 
 			It is licensed under the SIL Open Font License 1.1  and available for contribution, 
 			modification or download on its open-source page. It was necessary to convert the original file format, 
-			otf, to woff, for it to display in an HTML file.
+			<span class="info">otf</span>, to <span class="info">woff</span>, for it to display in an HTML file.
 			The original font file was downloaded from the Open Foundry website and the converted font file 
 			is stored in the same GitHub repository as the HTML and CSS files that make up this page. 
 				The CSS <span class="info">@font-face</span> rule is used to reference the file in the stylesheet.
@@ -135,11 +135,9 @@
 			is less of an issue.</p>
 			<p>Span elements with the class <span class="info">info</span> use another web-safe font, the rule is 
 			<span class="info">font-family:"Lucida Console", "Courier New", monospace</span>. 
-				Span elements with the class <span class="info">names</span> just use <span class="names">Roboto</span>, 
-				but the <span class="info">font-weight</span> value has been set to <span class="info">bold</span> in the 
-				external CSS file.
-			
-			</p>
+			Span elements with the class <span class="info">names</span> just use <span class="names">Roboto</span>, 
+			but the <span class="info">font-weight</span> value has been set to <span class="info">bold</span> in the 
+			external CSS file.</p>
 		</section>
 		
 		<section id="link-info">
@@ -149,10 +147,11 @@
 		</section>
 		</main>
 		<footer class="info">
-			<p>Last updated: September 26th 2005</p>
+			<p>Last updated: September 27th 2005</p>
 			<p>&copy; Toby Brodie</p>
 		</footer>
 		
 	</body>
 
 </html>
+
