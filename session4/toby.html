@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- link to external stylesheet -->
@@ -20,51 +20,53 @@
 		so you can can styles across all pages at the same time, creating a uniform look across 
 		the entire website -->
 		<style>
-			h2 {letter-spacing: 0.5em;} /* changing letter spacing can help (or hinder) readability
+			h2 {letter-spacing: 0.5em;} /* changing letter spacing can help (or hinder) readability */
 		</style>
 	</head>
 	<body class="roboto-body-class">
 		<header>
-			<h1>Web Development and Computer Principles<span class="info">(this is the h1 heading)</span></h1>
+			<h1 id="top">Web Development and Computer Principles<span class="info">(this is the h1 heading)</span></h1>
 			<h2>Playing with CSS <span class="info">(this is an h2 heading)</span></h2>
+			<a href="#top" id="jumper"><i class="fa-solid fa-circle-up" title="Back to top"></i></a>
+		</header>
+		<main>
 			<nav id="main-nav">
 				<!-- this li is styled in line -->
 				<div>
-					<a href="https://nyu.edu" >
-						<i class="fa-solid fa-graduation-cap" aria-hidden="true" style="color:red"></i>
-						NYU Website
+					<a href="#css-info" >
+						<i class="fa-brands fa-css3-alt" aria-hidden="true" style="color:red"></i>
+						CSS
 					</a>
 				</div>
 				<div>
 					
-					<a href="https://birkbeck.ac.uk">
-						<i class="fa-solid fa-graduation-cap" aria-hidden="true" style="color:greenyellow"></i>
-						Birkbeck Uni
+					<a href="#flexbox-float-info">
+						<i class="fa-solid fa-table-columns" aria-hidden="true" style="color:rgb(255, 238, 0)"></i>
+						Flexbox &amp; Floats
 					</a>
 				</div>
 				<div>
 					
-					<a href="https://citystgeorges.ac.uk">
-						<i class="fa-solid fa-graduation-cap" aria-hidden="true" style="color:#f4b2b2"></i>
-						City St. Georges
+					<a href="#font-info">
+						<i class="fa-solid fa-font" aria-hidden="true" style="color:#f4b2b2"></i>
+						Fonts
 					</a>
 				</div>
 				<div>	
-					<a href="https://gold.ac.uk">
-						<i class="fa-solid fa-graduation-cap" aria-hidden="true"  style="color:#b2eef4"></i>
-						Goldsmiths
+					<a href="#positioning-info">
+						<i class="fa-solid fa-up-down-left-right" aria-hidden="true" style="color:#f4b2b2"></i>
+						Positioning
 					</a>
 				</div>	
-			</nav>
-		</header>
-		<main>
-			
+			</nav>	
 		<section id="css-info">
-			<h3>CSS (Cascading Style Sheets) <span class="info">(this is an h3 heading)</span></h3>
+			<h3><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS (Cascading Style Sheets) <span class="info">(this is an h3 heading)</span></h3>
 			<p>As you can see, this page has been styled using CSS. There is a single style rule in the HTML page &lt;head&gt;
 			element, increasing the <span class="info">letter-spacing</span> for the <span class="info">h2</span> heading, 
-			as well as inline styles in the main navigation icon elements - <span class="info">&lt;i&gt;</span> - (making the graduation hats different colours).<p>
-			<p><img src="london_skyline.jpeg" alt="London skyline" id="london-skyline" width="50%">In addition to these, there are a variety of styles rules defined in the <a href="style.css">external style sheet</a>. 
+			as well as inline styles in the main navigation icon elements - <span class="info">&lt;i&gt;</span> - 
+				(making the graduation hats different colours).<p>
+			<p><img src="london_skyline.jpeg" alt="London skyline" id="london-skyline" width="50%">In addition to these, 
+				there are a variety of styles rules defined in the <a href="style.css">external style sheet</a>. 
 			Selectors are used to target the HTML. This targeting ranges from simple HTML elements like the 
 			<span class="info">body</span>, <span class="info">h1</span>, <span class="info">h2</span> &amp; <span class="info">h3</span>, 
 			through targeting classes and id attributes of specific elements such as - 
@@ -87,8 +89,8 @@
 			<a href="https://commons.wikimedia.org/w/index.php?curid=74181523">view the Wikimedia Commons details page</a>
 			for more details.</p>
 		</section>
-		<section>
-			<h3>Flexbox &amp; Floats </h3>
+		<section id="flexbox-float-info">
+			<h3><i class="fa-solid fa-table-columns" aria-hidden="true"></i> Flexbox &amp; Floats </h3>
 			<p>The main menu uses Flexbox CSS - this can be viewed in the <a href="style.css">external style sheet</a>. 
 			The <span class="info">&lt;nav&gt;</span> element with the id <span class="info">"main-nav"</span> is the container,
 			which has the  <span class="info">display:flexbox;</span> rule. The children, or flexbox items, are the 
@@ -104,7 +106,7 @@
 			
 		</section>
 		<section id="font-info">
-			<h3>Fonts <span class="info">(this is an h3 heading)</span></h3>
+			<h3><i class="fa-solid fa-font" aria-hidden="true"></i> Fonts <span class="info">(this is an h3 heading)</span></h3>
 			<p>On this webpage, the main font for the page 
 			(except the headings - <span class="info">h1</span>, <span class="info">h3</span>, and <span class="info">span</span> elements)
 			is Google's <span class="names">Roboto</span>, a sans-serif font. 
@@ -139,7 +141,26 @@
 			but the <span class="info">font-weight</span> value has been set to <span class="info">bold</span> in the 
 			external CSS file.</p>
 		</section>
-		
+		<section id="positioning-info">
+			<h3><i class="fa-solid fa-up-down-left-right"></i> Positioning <span class="info">(this is an h3 heading)</span></h3>
+			<p>The position property in CSS 
+				allows you to control how elements are placed on the page. 
+				Common values include <span class="info">static</span> (the default), 
+				<span class="info">relative</span>, <span class="info">absolute</span>, 
+				<span class="info">fixed</span>, and <span class="info">sticky</span>. 
+				For example, using <span class="info">position: fixed;</span> on an element 
+				will keep it visible at a set location even when scrolling. 
+				This can be seen in action with the arrow icon at the bottom right of the page. 
+				It remains in the same position as you scroll up and down the page.</p>
+			<p>Another positioning rule is in use on this page: <span class="info">position: sticky;</span> which allows an element to stick to a specified position as you scroll past it.
+			This is useful for keeping headers or navigation menus visible while scrolling through content. 
+			On this page, the main navigation bar is a sticky element.</p>
+			<p><span class="info">position: relative;</span> allows you to adjust an element's position
+			relative to its normal position using the <span class="info">top</span>, <span class="info">right</span>, <span class="info">bottom</span>, and <span class="info">left</span> properties. 
+			For instance, you can move an element slightly up, down, left, or right from where it would normally be placed in the document flow.</p>
+			<p><span class="info">position: absolute;</span> positions an element relative to its nearest positioned ancestor. 
+			<p>The position properties are useful for creating layouts, overlays, and sticky headers or footers.</p>
+		</section>
 		<section id="link-info">
 			<h3>More<span class="info">(this is an h3 heading)</span></h3>
 			<p>More content is forthcoming. Check back over the coming days.

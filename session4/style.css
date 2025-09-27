@@ -5,6 +5,8 @@
   font-style: normal;
 }
 
+
+
 body {
     background-color: darkslategrey;
     color:white;
@@ -12,16 +14,32 @@ body {
     letter-spacing: 0.1rem;
     line-height: 1.3rem;
     font-weight: 400;
-    width:85%;
-    margin: 2% auto
-    
+    width:80%;
+    margin: 0 auto;
+    height: 100vh;  /* set height to full viewport height */
+    overflow: auto; /* added to enable scrolling */
 }
+#jumper {
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom:2%;
+    right:1%
+}
+
+.fa-circle-up {
+    color:white;
+    font-size: 	2.5em;
+}
+
 h1 {
     font-family: "Times New Roman", serif; 
     letter-spacing: 0.2rem;
     font-size: 1.6rem;
-    margin-top:8%;
+    padding-top:8%;
+	margin-top:0;
     margin-bottom: 4%;
+    
 }
 
 h2 {
@@ -33,6 +51,7 @@ h2 {
 }
 
 h3 {
+    padding-top: 13%;
     font-family: "Bagnard", serif ; 
 }
 
@@ -45,19 +64,22 @@ p a {
 
 /* FLEXBOX for main nav */
 #main-nav {
-    display: flexbox;
-    direction: ltr;
-    flex-direction: row;
+    display: flex;
+    direction: ltr; /* default */
+    flex-direction: row; /* default */
     background-color: #1b6464;
-    margin: 5% 0%;
+    margin: 5% 0 0 0;
     border-block: 1rem solid #295729;
     writing-mode: horizontal-tb;
+    justify-content: space-around; /* spaces the flexbox items */
+    position: sticky;
+    top:0%;
 }
 /* FLEXBOX items */
 #main-nav div {
     display: inline-block;
-    margin-right: 1%;
-    padding:2%;
+ 
+    padding:2% 0;
 
 }
 
@@ -85,6 +107,11 @@ nav a:hover{
 
 nav a:active {
     color:aqua;
+}
+
+section i {
+    font-size:2em;
+    color:#06c9c94d;
 }
 
 #london-skyline{
